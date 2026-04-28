@@ -741,17 +741,6 @@
                     <div class="relative mt-auto" data-report-slider>
                         <div class="overflow-hidden rounded-lg border border-white/5 slide-stack touch-pan-y select-none">
                             <img data-report-slide src="https://i.imgur.com/CeMsPXg.png" alt="Мой личный отчёт по продажам и выкупам за год" class="w-full h-auto block is-active"/>
-                            <img data-report-slide src="https://i.imgur.com/66gzOHC.png" alt="Дополнительный отчёт по продажам" class="w-full h-auto block"/>
-                        </div>
-                        <button type="button" data-report-prev aria-label="Предыдущий отчёт" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 hover:bg-black/80 border border-white/10 flex items-center justify-center text-primary transition-colors">
-                            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-                        </button>
-                        <button type="button" data-report-next aria-label="Следующий отчёт" class="absolute right-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 hover:bg-black/80 border border-white/10 flex items-center justify-center text-primary transition-colors">
-                            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
-                        </button>
-                        <div data-report-dots class="flex justify-center gap-1.5 mt-3">
-                            <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
-                            <span class="w-1.5 h-1.5 rounded-full bg-white/20"></span>
                         </div>
                     </div>
                 </div>
@@ -852,7 +841,7 @@
                                 <svg class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" stroke-width="2"/>
                                     <path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            </svg>
                             </div>
                             <p class="text-xs sm:text-sm text-white leading-tight pr-2">Организуем доставку и таможню</p>
                         </div>
@@ -894,7 +883,7 @@
                             <div class="w-10 h-10 rounded-lg bg-blue-500/20 flex items-center justify-center shrink-0">
                                 <svg class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            </svg>
                             </div>
                             <p class="text-xs sm:text-sm text-white leading-tight pr-2">Только рабочие схемы и реальные инструменты</p>
                         </div>
@@ -924,7 +913,7 @@
                             <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0">
                                 <svg class="w-5 h-5 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            </svg>
                             </div>
                             <p class="text-xs sm:text-sm text-white leading-tight pr-2">Поддержка на всех этапах обучения</p>
                         </div>
@@ -959,13 +948,16 @@
                             </svg>
                         </span>
                         <h3 class="text-2xl font-bold text-white font-headline mb-1">Китай</h3>
-                        <span class="text-2xl font-bold shimmer-text">1990 ₽</span>
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-2xl font-bold shimmer-text">1990 ₽</span>
+                            <span class="text-white/40 line-through text-base">2590 ₽</span>
+                        </div>
                         <p class="text-white/40 text-sm mt-1">Доступ навсегда</p>
                     </div>
                     <ul class="flex-grow space-y-3 mb-8">
                         <li class="flex items-start gap-3 text-white/70 text-sm">
                             <span class="text-primary mt-0.5">✓</span>
-                            <span>Обучение заказам с Taobao, 1688, Pinduoduo</span>
+                            <span>Обучение заказам с Taobao, 1688, Pinduoduo, POIZON, 95, Goofish</span>
                         </li>
                         <li class="flex items-start gap-3 text-white/70 text-sm">
                             <span class="text-primary mt-0.5">✓</span>
@@ -1294,6 +1286,9 @@
             <p class="text-base text-primary/80 text-center max-w-xs mb-4">
                 Также, я принимаю заказы как посредник.
             </p>
+            <div class="w-full max-w-xs mb-4 rounded-xl overflow-hidden border border-white/10">
+                <img src="https://i.imgur.com/66gzOHC.png" alt="Дополнительный отчёт по продажам" class="w-full h-auto block"/>
+            </div>
             <a href="https://t.me/KSENIAVARKULEVICH" target="_blank"
                 class="btn-glow btn-magnetic bg-primary text-black font-bold text-sm uppercase tracking-[0.15em] rounded-[1.5rem] px-8 py-4 flex items-center justify-center gap-2 transition-all border border-white/10 shadow-[0_0_30px_rgba(255,215,155,0.1)] whitespace-nowrap">
                 Telegram
