@@ -500,11 +500,11 @@
         #hero-intro {
             position: fixed;
             inset: 0;
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
             background: #000000;
             z-index: 9999;
             transition: opacity 0.8s ease, visibility 0.8s ease;
+            padding-bottom: env(safe-area-inset-bottom);
         }
         #hero-intro.is-done {
             opacity: 0;
@@ -514,6 +514,7 @@
         .hero-intro-sticky {
             position: relative;
             height: 100vh;
+            height: 100dvh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -692,7 +693,7 @@
                     VARKULEVICH
                 </h1>
                 <p class="hero-intro-subtitle text-base md:text-xl text-white/70 mt-8 text-center max-w-[80vw]">
-                    Ты научишься заказывать с Китая, Кореи и Японии быстрее, чем думаешь.
+                    «Ты научишься заказывать с Китая, Кореи и Японии быстрее, чем думаешь.»
                 </p>
             </div>
         </section>
@@ -702,14 +703,14 @@
                 VARKULEVICH
             </h1>
             <p class="text-base md:text-lg text-white/60 mt-4 text-center max-w-[80vw] px-4 reveal-up hero-subtitle-float">
-                Ты научишься заказывать с Китая, Кореи и Японии быстрее, чем думаешь.
+                «Ты научишься заказывать с Китая, Кореи и Японии быстрее, чем думаешь.»
             </p>
             <!-- Hero Gallery: автор + результаты продаж -->
             <div class="w-full max-w-5xl mx-auto mt-12 px-4 grid grid-cols-1 md:grid-cols-2 gap-6 reveal-up delay-200">
                 <div class="relative rounded-xl border border-white/10 overflow-hidden slide-stack touch-pan-y select-none aspect-[4/5] md:aspect-auto md:h-full" data-slider>
-                    <img data-slide src="https://i.imgur.com/e69VjoI.jpeg" alt="Ксения Варкулевич" class="absolute inset-0 w-full h-full object-cover is-active"/>
-                    <img data-slide src="https://i.imgur.com/4oY7yqR.png" alt="Ксения Варкулевич — фото 2" class="absolute inset-0 w-full h-full object-cover"/>
-                    <img data-slide src="https://i.imgur.com/3Yu1Etg.jpeg" alt="Ксения Варкулевич — фото 3" class="absolute inset-0 w-full h-full object-cover"/>
+                    <img data-slide src="https://i.ibb.co/XfKxGWkD/image.png" alt="Ксения Варкулевич" class="absolute inset-0 w-full h-full object-cover is-active"/>
+                    <img data-slide src="https://i.ibb.co/sdZ42BWt/image.png" alt="Ксения Варкулевич — фото 2" class="absolute inset-0 w-full h-full object-cover"/>
+                    <img data-slide src="https://i.ibb.co/GvvfBkxq/image.png" alt="Ксения Варкулевич — фото 3" class="absolute inset-0 w-full h-full object-cover"/>
                     <button type="button" data-slide-prev aria-label="Предыдущее фото" class="absolute left-2 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 hover:bg-black/80 border border-white/10 flex items-center justify-center text-primary transition-colors z-10">
                         <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
                     </button>
@@ -738,9 +739,9 @@
                         <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#cb11ab] text-white text-[9px] font-bold shrink-0">W</span>
                         <p class="text-white/60 text-xs">Отчёт с Wildberries</p>
                     </div>
-                    <div class="relative mt-auto" data-report-slider>
-                        <div class="overflow-hidden rounded-lg border border-white/5 slide-stack touch-pan-y select-none">
-                            <img data-report-slide src="https://i.imgur.com/CeMsPXg.png" alt="Мой личный отчёт по продажам и выкупам за год" class="w-full h-auto block is-active"/>
+                    <div class="mt-auto">
+                        <div class="overflow-hidden rounded-lg border border-white/5">
+                            <img src="https://i.ibb.co/fz47s0sN/image.png" alt="Мой личный отчёт по продажам и выкупам за год" class="w-full h-auto block"/>
                         </div>
                     </div>
                 </div>
@@ -768,7 +769,7 @@
             <!-- About Ksenia Section -->
             <div class="w-full max-w-3xl mx-auto mt-12 px-4 reveal-up">
                 <div class="bg-[#0d0d0c] rounded-xl border border-white/10 p-6">
-                    <h3 class="text-xl md:text-2xl font-bold text-white font-headline mb-4 text-center">Обо мне</h3>
+                    <h3 class="text-xl md:text-2xl font-bold text-white mb-4 text-center">Обо мне</h3>
                     <div class="text-white/80 text-sm md:text-base leading-relaxed bio-content text-center">
                         <p class="bio-visible">
                             Меня зовут Ксения Варкулевич, мне 17 лет, и я более 2 лет в товарном бизнесе. С 15 лет занимаюсь перепродажами и выкупом товаров из Азии. Уже тогда заработала первые 100 000 рублей за месяц.
@@ -839,7 +840,7 @@
                         <div class="bg-gradient-to-br from-blue-500/20 to-blue-600/10 rounded-[1.5rem] p-5 border border-blue-500/30 flex items-center gap-3 shadow-lg shadow-blue-500/20">
                             <div class="w-10 h-10 rounded-xl bg-blue-500/20 flex items-center justify-center shrink-0">
                                 <svg class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" stroke-width="2"/>
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-width="2"/>
                                     <path d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             </div>
@@ -912,7 +913,7 @@
                         <div class="flex items-center gap-3 bg-white/5 rounded-xl p-5">
                             <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center shrink-0">
                                 <svg class="w-5 h-5 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                             </div>
                             <p class="text-xs sm:text-sm text-white leading-tight pr-2">Поддержка на всех этапах обучения</p>
@@ -1126,35 +1127,35 @@
                 <h2 class="text-display-lg font-headline font-bold mb-12 text-white reveal-up">Подходит для:
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl text-left">
-                    <div class="flex items-start gap-3 reveal-up delay-100">
+                    <div class="reveal-up">
                         <span class="check-mark text-primary text-xl mt-0.5">✓</span>
                         <div>
                             <h3 class="text-lg font-bold text-white mb-1">Личных покупок</h3>
                             <p class="text-sm text-white/60">Покупай всё для себя по ценам ниже рынка в 2-3 раза</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-3 reveal-up delay-150">
+                    <div class="reveal-up delay-100">
                         <span class="check-mark text-primary text-xl mt-0.5">✓</span>
                         <div>
                             <h3 class="text-lg font-bold text-white mb-1">Запуска бизнеса</h3>
                             <p class="text-sm text-white/60">Начни свой магазин с минимальными вложениями</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-3 reveal-up delay-200">
+                    <div class="reveal-up delay-200">
                         <span class="check-mark text-primary text-xl mt-0.5">✓</span>
                         <div>
                             <h3 class="text-lg font-bold text-white mb-1">Маркетплейсов</h3>
                             <p class="text-sm text-white/60">Поставляй товары на Wildberries, Ozon, Яндекс.Маркет</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-3 reveal-up delay-250">
+                    <div class="reveal-up delay-300">
                         <span class="check-mark text-primary text-xl mt-0.5">✓</span>
                         <div>
                             <h3 class="text-lg font-bold text-white mb-1">Оптовых поставок</h3>
                             <p class="text-sm text-white/60">Масштабируй закупки и работай с крупными объёмами</p>
                         </div>
                     </div>
-                    <div class="flex items-start gap-3 reveal-up delay-300 col-span-1 md:col-span-2 lg:col-span-1">
+                    <div class="reveal-up delay-400 col-span-1 md:col-span-2 lg:col-span-1">
                         <span class="check-mark text-primary text-xl mt-0.5">✓</span>
                         <div>
                             <h3 class="text-lg font-bold text-white mb-1">Собственного бренда</h3>
@@ -1286,8 +1287,25 @@
             <p class="text-base text-primary/80 text-center max-w-xs mb-4">
                 Также, я принимаю заказы как посредник.
             </p>
-            <div class="w-full max-w-xs mb-4 rounded-xl overflow-hidden border border-white/10">
-                <img src="https://i.imgur.com/66gzOHC.png" alt="Дополнительный отчёт по продажам" class="w-full h-auto block"/>
+            <div class="w-full max-w-xs mb-4 relative" data-report-slider>
+                <div class="overflow-hidden rounded-xl border border-white/10 slide-stack touch-pan-y select-none">
+                    <img data-report-slide src="https://i.ibb.co/0y1qYKw5/image.png" alt="Посредник — фото 1" class="w-full h-auto block is-active"/>
+                    <img data-report-slide src="https://i.ibb.co/5XNhJg3Z/image.png" alt="Посредник — фото 2" class="w-full h-auto block"/>
+                    <img data-report-slide src="https://i.ibb.co/39rHbsvg/image.png" alt="Посредник — фото 3" class="w-full h-auto block"/>
+                    <img data-report-slide src="https://i.ibb.co/SLQ9Rcd/image.png" alt="Посредник — фото 4" class="w-full h-auto block"/>
+                </div>
+                <button type="button" data-report-prev aria-label="Предыдущее" class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 hover:bg-black/80 border border-white/10 flex items-center justify-center text-primary transition-colors">
+                    <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <button type="button" data-report-next aria-label="Следующее" class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 hover:bg-black/80 border border-white/10 flex items-center justify-center text-primary transition-colors">
+                    <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+                </button>
+                <div data-report-dots class="flex justify-center gap-1.5 mt-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-white/20"></span>
+                </div>
             </div>
             <a href="https://t.me/KSENIAVARKULEVICH" target="_blank"
                 class="btn-glow btn-magnetic bg-primary text-black font-bold text-sm uppercase tracking-[0.15em] rounded-[1.5rem] px-8 py-4 flex items-center justify-center gap-2 transition-all border border-white/10 shadow-[0_0_30px_rgba(255,215,155,0.1)] whitespace-nowrap">
